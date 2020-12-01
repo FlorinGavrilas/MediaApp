@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Providers </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style>
+    table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    }
+    th, td {
+    padding: 15px;
+    }
+    </style>
+
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th> ID </th>
+        <th> Name </th>
+        <th> Surname </th>
+        <th> Mail </th>
+        <th> Telephone </th>
+        <th> Rating </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:if="${providers.empty}">
+        <td colspan="5" align="center"> Empty </td>
+    </tr>
+    <tr th:each="provider : ${providers}">
+        <td><span th:text="${provider.id}"> ID </span></td>
+        <td><span th:text="${provider.name}"> Name </span></td>
+        <td><span th:text="${provider.surname}"> Surname </span></td>
+        <td><span th:text="${provider.eMailAddress}"> Mail </span></td>
+        <td><span th:text="${provider.telephoneNumber}"> Telephone </span></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
