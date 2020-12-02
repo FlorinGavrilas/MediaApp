@@ -1,11 +1,19 @@
-<!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
-      xmlns:sec="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorate="~{fragments/layout}">
 <head>
-    <title>Media App </title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Index</title>
 </head>
 <body>
-    <p>To add <a href="to be added">here</a></p>
+<div layout:fragment="content" th:remove="tag">
+    <h1>Hello :D</h1>
+    <p>This is the index page</p>
+    <ul>
+        <li>Go to <a href="/users" th:href="@{/users}">users</a></li>
+        <li>Go to <a href="/providers" th:href="@{/providers}">providers</a></li>
+        <li>Go to <a href="/servicesProvided" th:href="@{/servicesProvided}">services</a></li>
+    </ul>
+</div>
 </body>
 </html>

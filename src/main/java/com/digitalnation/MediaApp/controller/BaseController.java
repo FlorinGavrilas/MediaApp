@@ -1,6 +1,7 @@
 package com.digitalnation.MediaApp.controller;
 
 import com.digitalnation.MediaApp.model.Provider;
+import com.digitalnation.MediaApp.model.ServiceProvided;
 import com.digitalnation.MediaApp.model.User;
 import com.digitalnation.MediaApp.repository.ProviderRepository;
 import com.digitalnation.MediaApp.repository.ServiceProvidedRepository;
@@ -31,11 +32,10 @@ public class BaseController {
         return "redirect:";
     }
 
-    /*
     @GetMapping("/login")
     public String login() {
         return "login";
-    }*/
+    }
 
     @GetMapping("/users")
     public String users(Model model) {
@@ -80,5 +80,29 @@ public class BaseController {
     @ResponseBody
     public Optional<Provider> provider(@PathVariable Long idProvider) {
         return providerRepository.findById(idProvider);
+    }
+
+    @GetMapping("/servicesProvided")
+    public String services(Model model) {
+        model.addAttribute("servicesProvided", serviceProvidedRepository.findAll());
+        return "servicesProvided";
+    }
+
+    @GetMapping("/addService")
+    public String addService(Model model) {
+        model.addAttribute("serviceProvided", new ServiceProvided());
+        return "addService";
+    }
+
+    @PostMapping("/createService")
+    public String createService(@ModelAttribute ServiceProvided service, Model model) {
+        model.addAttribute("serviceProvided", service);
+        serviceProvidedRepository.save(service);
+        return "redirect:servicesProvided";
+    }
+
+    @GetMapping("/error")
+    public String error() {
+        return "error";
     }
 }

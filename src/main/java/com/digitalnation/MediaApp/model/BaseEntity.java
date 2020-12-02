@@ -4,7 +4,7 @@ import javax.persistence.Entity;
 
 @Entity
 public class BaseEntity extends EntityWithID {
-
+    
     private String name;
     private String surname;
     private String eMailAddress;

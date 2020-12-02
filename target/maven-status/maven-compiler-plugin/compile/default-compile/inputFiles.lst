@@ -7,6 +7,5 @@ D:\_Learn Java\Work\MediaApp\src\main\java\com\digitalnation\MediaApp\controller
 D:\_Learn Java\Work\MediaApp\src\main\java\com\digitalnation\MediaApp\repository\ServiceProvidedRepository.java
 D:\_Learn Java\Work\MediaApp\src\main\java\com\digitalnation\MediaApp\repository\UserRepository.java
 D:\_Learn Java\Work\MediaApp\src\main\java\com\digitalnation\MediaApp\MediaAppApplication.java
-D:\_Learn Java\Work\MediaApp\src\main\java\com\digitalnation\MediaApp\controller\ThymeleafConfig.java
 D:\_Learn Java\Work\MediaApp\src\main\java\com\digitalnation\MediaApp\model\ServiceProvided.java
 D:\_Learn Java\Work\MediaApp\src\main\java\com\digitalnation\MediaApp\securityweb\WebSecurityConfig.java

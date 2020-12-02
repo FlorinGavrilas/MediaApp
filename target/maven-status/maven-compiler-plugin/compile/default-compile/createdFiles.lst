@@ -1,6 +1,5 @@
 com\digitalnation\MediaApp\model\User.class
 com\digitalnation\MediaApp\repository\ServiceProvidedRepository.class
-com\digitalnation\MediaApp\controller\ThymeleafConfig.class
 com\digitalnation\MediaApp\securityweb\WebSecurityConfig.class
 com\digitalnation\MediaApp\repository\ProviderRepository.class
 com\digitalnation\MediaApp\model\EntityWithID.class

@@ -27,15 +27,15 @@
     </tr>
     </thead>
     <tbody>
-    <tr th:if="${services.empty}">
+    <tr th:if="${servicesProvided.empty}">
         <td colspan="5" align="center"> Empty </td>
     </tr>
-    <tr th:each="service : ${services}">
-        <td><span th:text="${service.id}"> ID </span></td>
-        <td><span th:text="${service.name}"> Name </span></td>
-        <td><span th:text="${service.idProvider}"> Provider Id </span></td>
-        <td><span th:text="${service.description}"> Description </span></td>
-        <td><span th:text="${service.price}"> Price </span></td>
+    <tr th:each="serv : ${servicesProvided}">
+        <td><span th:text="${serv.id}"> ID </span></td>
+        <td><span th:text="${serv.name}"> Name </span></td>
+        <td><span th:text="${serv.idProvider}"> Provider Id </span></td>
+        <td><span th:text="${serv.description}"> Description </span></td>
+        <td><span th:text="${serv.price}"> Price </span></td>
     </tr>
     </tbody>
 </table>
