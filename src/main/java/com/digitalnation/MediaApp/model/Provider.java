@@ -6,9 +6,11 @@ import javax.persistence.Entity;
 public class Provider extends BaseEntity {
     private Double rating;
 
+    public Provider() {}
+
     public Provider(String name, String surname, String eMailAddress, String telephoneNumber, Double rating) {
         super(name, surname, eMailAddress, telephoneNumber);
-        this.rating = rating;
+        this.rating = 0d;
     }
 
     public Double getRating() {

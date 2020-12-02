@@ -1,1 +1,12 @@
+D:\_Learn Java\Work\MediaApp\src\main\java\com\digitalnation\MediaApp\model\Provider.java
+D:\_Learn Java\Work\MediaApp\src\main\java\com\digitalnation\MediaApp\model\User.java
+D:\_Learn Java\Work\MediaApp\src\main\java\com\digitalnation\MediaApp\repository\ProviderRepository.java
+D:\_Learn Java\Work\MediaApp\src\main\java\com\digitalnation\MediaApp\model\BaseEntity.java
+D:\_Learn Java\Work\MediaApp\src\main\java\com\digitalnation\MediaApp\model\EntityWithID.java
+D:\_Learn Java\Work\MediaApp\src\main\java\com\digitalnation\MediaApp\controller\BaseController.java
+D:\_Learn Java\Work\MediaApp\src\main\java\com\digitalnation\MediaApp\repository\ServiceProvidedRepository.java
+D:\_Learn Java\Work\MediaApp\src\main\java\com\digitalnation\MediaApp\repository\UserRepository.java
 D:\_Learn Java\Work\MediaApp\src\main\java\com\digitalnation\MediaApp\MediaAppApplication.java
+D:\_Learn Java\Work\MediaApp\src\main\java\com\digitalnation\MediaApp\controller\ThymeleafConfig.java
+D:\_Learn Java\Work\MediaApp\src\main\java\com\digitalnation\MediaApp\model\ServiceProvided.java
+D:\_Learn Java\Work\MediaApp\src\main\java\com\digitalnation\MediaApp\securityweb\WebSecurityConfig.java

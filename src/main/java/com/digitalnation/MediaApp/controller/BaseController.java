@@ -31,6 +31,12 @@ public class BaseController {
         return "redirect:";
     }
 
+    /*
+    @GetMapping("/login")
+    public String login() {
+        return "login";
+    }*/
+
     @GetMapping("/users")
     public String users(Model model) {
         model.addAttribute("users", userRepository.findAll());
@@ -54,6 +60,20 @@ public class BaseController {
     public String providers(Model model) {
         model.addAttribute("providers", providerRepository.findAll());
         return "providers";
+    }
+
+    @GetMapping("/addProvider")
+    public String addProvider(Model model) {
+        model.addAttribute("provider", new Provider());
+        return "addProvider";
+    }
+
+    @PostMapping("/createProvider")
+    public String createProvider(@ModelAttribute Provider provider, Model model) {
+        model.addAttribute("provider", provider);
+        provider.setRating(0d);
+        providerRepository.save(provider);
+        return "redirect:providers";
     }
 
     @GetMapping("/provider/{idProvider}")

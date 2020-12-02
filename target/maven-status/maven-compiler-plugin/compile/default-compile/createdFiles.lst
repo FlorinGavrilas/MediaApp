@@ -1,0 +1,12 @@
+com\digitalnation\MediaApp\model\User.class
+com\digitalnation\MediaApp\repository\ServiceProvidedRepository.class
+com\digitalnation\MediaApp\controller\ThymeleafConfig.class
+com\digitalnation\MediaApp\securityweb\WebSecurityConfig.class
+com\digitalnation\MediaApp\repository\ProviderRepository.class
+com\digitalnation\MediaApp\model\EntityWithID.class
+com\digitalnation\MediaApp\model\ServiceProvided.class
+com\digitalnation\MediaApp\MediaAppApplication.class
+com\digitalnation\MediaApp\controller\BaseController.class
+com\digitalnation\MediaApp\model\Provider.class
+com\digitalnation\MediaApp\model\BaseEntity.class
+com\digitalnation\MediaApp\repository\UserRepository.class

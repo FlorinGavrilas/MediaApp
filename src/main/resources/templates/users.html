@@ -28,7 +28,7 @@
     </thead>
     <tbody>
     <tr th:if="${users.empty}">
-        <td colspan="4" align="center"> Empty </td>
+        <td colspan="5" align="center"> Empty </td>
     </tr>
     <tr th:each="user : ${users}">
         <td><span th:text="${user.id}"> ID </span></td>
